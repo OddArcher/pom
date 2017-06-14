@@ -1,0 +1,148 @@
+ /*
+Fonts
+font-family: 'Anton', sans-serif; - section
+font-family: 'VT323', monospace; - pixels
+font-family: 'Orbitron', sans-serif; - smooth
+font-family: 'Russo One', sans-serif; - content
+*/
+@font-face {
+  font-family: 'bauhaus';
+  src: url('../fonts/bauhaus.woff') format('woff'), 
+       url('../fonts/bauhaus.ttf') format('truetype');
+}
+
+body {
+	background-color: #1a1a1a;
+}
+
+a {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 40px;
+}
+
+nav {
+  bottom: 0px;
+}
+
+.header h1 {
+	color: white;
+  position: relative;
+  text-align: center;
+  font-size: 85px;
+  right: 100px;
+  top: 10px;
+  font-family: 'bauhaus';
+  text-shadow: 6px 6px grey;
+}
+
+.header img {
+  position: relative;
+  float: left;
+  width: 140px;
+  height: 140px;
+}
+
+.selected {
+color:#fff!important;background-color:#4d0000!important
+}
+
+.content {
+  color: #fff;
+  text-align: center;  
+  position: relative;
+  right: 50px;
+  font-family: 'Russo One', sans-serif;
+}
+
+.contentimg {
+  width: 650px;
+  height: 400px;
+  position: relative;
+  right: 50px;
+}
+
+.pomred {
+  color:#fff!important;background-color:#800000!important
+  }
+
+.footerinfo {
+  text-align: center;
+  position: relative;
+  right: 40px;
+  bottom: 5px;
+  color: #ffffff;
+}
+
+.selectbutton {
+  font-size: 18px;
+  width:125px;
+  height:50px;
+  border-radius: 10px;
+  background-color: #700a0a;
+  color: #f9f9d4;
+  border-color: black;
+  text-shadow: 2px 2px black;
+  cursor: pointer;
+}
+
+.cover {
+  width: 266px;
+  height: 256px;
+}
+
+#headerimg{
+  width: 120px;
+  height: 120px;
+  position: relative;
+  float: left;
+  top: 10px;
+}
+
+#sectionh {
+font-family: 'Anton', sans-serif;
+font-size: 50px;
+}
+
+#titleh{
+font-family: 'Russo One', sans-serif;
+font-size: 25px;
+}
+
+#sectiong {
+font-family: 'Anton', sans-serif;
+font-size: 50px;
+}
+
+#titleg{
+font-family: 'VT323', sans-serif;
+font-size: 50px;
+}
+
+#content-div {
+	text-align: center;
+	width:500px;
+	margin: auto;
+  width: 60%;
+}
+
+#contentimg-div {
+  text-align: center;
+}
+
+#butright {
+  left: 20px;
+}
+
+#butleft {
+  right: 120px;
+}
+
+#butabout {
+
+}
+
+@media (max-width: 600px) {
+  body {
+    background-color: blue;
+  }
+}
