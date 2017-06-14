@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pomegranate Games</title>
+  <!-- CSS Links-->
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <link rel="stylesheet" href="../css/w3.css">
+  <!-- JS Links-->
+  <script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/1script.js"></script>
+  <script src="../js/2script.js"></script>
+  <script src="../js/processing.min.js"></script>
+  <!-- Other Links-->
+  <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Anton|Orbitron|Russo+One|VT323" rel="stylesheet">
+</head>
+<body>
+<!--       Title Stuff        -->
+<div class="container">
+    <div class="row">
+      <div class="col-md-2 block-left text-left">
+        <img class ="img-responsive" onclick="w3_open()" id ="headerimg" src="../img/pom.png">
+      </div>
+      <div class="col-md-8 text-left">
+        <h1 id="headertext"><b>POMEGRANATE GAMES</b></h1>
+      </div>
+      <div class="col-md-2 text-left">
+        <nav class="w3-sidenav pomred w3-card-2 w3-border" style="width:15%;right:0;">
+        <br>
+        <a class = " w3-border-bottom w3-hover-text-black" href="../index.html">Home</a>
+        <a class = " w3-border-bottom w3-hover-text-black" href="index(games).html">Games</a>        
+        <a class = " w3-border-bottom w3-hover-text-black" href="index(music).html">Music</a>
+        <a class = " selected w3-border-bottom" href="#"><b>- Edits</b></a>
+        <a class = " w3-border-bottom w3-hover-text-black" href="index(about).html">About</a> 
+        <!--<a class = " w3-border-bottom w3-hover-text-black" href="otherpages/index(Sketches).html">Sketches</a>
+        <a class = " w3-border-bottom w3-hover-text-black" href="#">CLOSED</a>
+        <a class = " w3-border-bottom w3-hover-text-black" href="#">CLOSED</a>
+        <a class = " w3-border-bottom w3-hover-text-black" href="#">CLOSED</a>-->
+        </nav>
+      </div>
+    </div>
+</div>
+<!--       Break and Second Side Nav        -->
+<hr>
+<div class="w3-sidenav pomred w3-card-2 w3-border" style="display:none" id="mySidebar">
+<button onclick="w3_close()" class="w3-bar-item w3-large selected">Close &times;</button>
+<a href="#section1" class="w3-bar-item w3-button">Edit Collection</a>
+</div>
+<div class="container">
+<!--       Header Stuff        -->
+  <div class="row">
+<!--       Header        -->
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+      <h2 class="content" id="sectionheader">Edit Collection</h2>
+    </div>
+    <div class="col-md-3"></div>
+  </div>
+
+  <div class="row">
+<!--       Title        -->
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+      <h2 class="content normal" id="titleheader"><u>The Hills Are Alive<u></h2>
+    </div>
+    <div class="col-md-3"></div>
+  </div>
+
+  <div class="row">
+<!--       Picture        -->
+    <div class="col-md-3"></div>
+    <div class="col-md-6 block-center text-center">
+      <img class = "contentimg" src="../img/gallery/whokilledmycrew.png" id="cedit"> </img>
+    </div>
+    <div class="col-md-3"></div>
+  </div>
+
+  <div class="row">
+<!--       Space        -->
+    <div class="col-md-12 block-center text-center">
+      <br>
+    </div>
+  </div>
+
+  <div class="row">
+<!--       Buttons        -->
+    <div class="col-md-2"></div>
+    <div class="col-md-8 block-center text-center">
+      <button class="selectbutton content" id="butleft">Previous</button>
+      <button class="selectbutton content" id="butabout">About</button>
+      <button class="selectbutton content" id="butright">Next</button>
+    </div>
+     <div class="col-md-2"></div>
+  </div>
+
+    <div class="row">
+<!--       Space        -->
+    <div class="col-md-12 block-center text-center">
+      <br>
+    </div>
+  </div>
+
+    <div class="row">
+<!--       text        -->
+	<div class="col-md-2 block-center text-center"></div>
+    <div class="col-md-8 block-center text-center">
+      <p class = "content" id="descript"> This was my first attempt at photo editing. While playing an online game I glitched out of a ship and was left wandering a land nobody was supposed to walk on. I was horrified to find a secret snowman and a plot came up.</p>
+    </div>
+    <div class="col-md-2 block-center text-center"></div>
+  </div>
+
+
+
+
+
+
+  <div class="row">
+<!--       Final Space        -->
+    <div class="col-md-12 block-center text-center">
+      <br>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+
+<!--
+
+Comment (Add a dash to both)
+<!- ->
+
+Bootstrap (See text-center and block-center)
+  <div class="container">
+    <div class="row">
+      <div class="col-md-?">
+        
+      </div>
+    </div>
+  </div>
+
+Processing
+  <script type="application/processing" data-processing-target="pjs">
+
+  </script>
+  <canvas id = "pjs"></canvas>
+
+Jquery (in script)
+  $(document).ready(function(){
+    $("#id").interaction(function(){
+      $("#id").action({action paremeter});
+    });
+
+Javascript
+(call in item next to class)
+  onclick="homeScore();"
+(in js used to manipulate)
+  document.getElementById('id').aspect = change;
+(in script)
+  var ? = ?;
+  function ?() {
+  }
+  
+KOOL LINKS
+  https://www.w3schools.com/
+  https://www.webpagefx.com/web-design/html-ipsum/
+  https://placehold.it/
+  http://getbootstrap.com/
+  https://www.bootstrapcdn.com/fontawesome/
+-->
